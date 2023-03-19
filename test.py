@@ -1,6 +1,7 @@
 import requests
+import os
 
-API_KEY = "0b34ad4edf794f9a628e5d4f61cc5be2"
+API_KEY = os.environ.get("WEATHER_API_KEY")
 CITY_NAME = "London"
 BASE_URL = "https://api.openweathermap.org/data/2.5/weather"
 
